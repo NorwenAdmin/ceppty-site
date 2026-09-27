@@ -1,0 +1,9 @@
+[Unit]
+Description=Проверять обновления ceppty.nl каждые 5 минут
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=5min
+
+[Install]
+WantedBy=timers.target

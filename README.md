@@ -23,4 +23,22 @@ npm run preview   # посмотреть сборку
 
 ## Выкладка
 
-Собрать и положить `dist/` на сервер в `/srv/ceppty/site` (D-270). `dist/` в репозиторий не коммитится.
+Готовый сайт лежит на сервере в `/srv/ceppty/site` (D-270), nginx отдаёт его как есть. `dist/` в репозиторий не коммитится.
+
+### Автоматически (сервер сам забирает `main`)
+
+GitHub Actions не используются. Раз в 5 минут таймер на VPS проверяет `main`; есть новый коммит — собирает и подменяет сайт (`deploy/update-site.sh`). Ключей не нужно: репозиторий публичный.
+
+Установка один раз (под root; нужны `git`, `rsync`, Node.js 20+ и пользователь `ceppty`):
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/NorwenAdmin/ceppty-site/main/deploy/update-site.sh -o /srv/ceppty/update-site.sh
+chmod 755 /srv/ceppty/update-site.sh
+mkdir -p /srv/ceppty/site /srv/ceppty/site-src && chown ceppty:ceppty /srv/ceppty/site /srv/ceppty/site-src
+curl -fsSL https://raw.githubusercontent.com/NorwenAdmin/ceppty-site/main/deploy/ceppty-site.service -o /etc/systemd/system/ceppty-site.service
+curl -fsSL https://raw.githubusercontent.com/NorwenAdmin/ceppty-site/main/deploy/ceppty-site.timer -o /etc/systemd/system/ceppty-site.timer
+systemctl daemon-reload && systemctl enable --now ceppty-site.timer
+systemctl start ceppty-site.service && journalctl -u ceppty-site.service -n 20
+```
+
+Скрипт сам себя не обновляет: изменили `deploy/update-site.sh` — повторить первые две строки.

@@ -1,0 +1,9 @@
+[Unit]
+Description=Обновить ceppty.nl из GitHub
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=ceppty
+ExecStart=/srv/ceppty/update-site.sh
