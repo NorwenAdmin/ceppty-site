@@ -50,7 +50,7 @@ export const texts = {
       updated: 'Laatst bijgewerkt: 27 september 2026',
       h1: 'Je kassabonnen blijven op je telefoon',
       short:
-        'Ceppty bewaart je kassabonnen op je telefoon. Geen account, geen reclame, geen tracking. Er gaat alleen iets naar buiten als jij dat kiest: een melding over een kassabon die de app niet goed leest, of iets wat je zelf deelt.',
+        'Ceppty bewaart je kassabonnen op je telefoon. Geen account, geen reclame, geen tracking. Er gaat alleen iets naar buiten als jij dat kiest: een rapport over een kassabon die de app niet goed leest, of iets wat je zelf deelt.',
     },
     support: {
       title: 'Support — Ceppty',
