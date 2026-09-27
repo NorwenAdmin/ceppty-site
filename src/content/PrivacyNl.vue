@@ -1,17 +1,6 @@
-<!doctype html>
-<html lang="nl">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacyverklaring — Ceppty</title>
-<link rel="stylesheet" href="../style.css">
-</head>
-<body>
-<main>
-<header><a class="brand" href="../">Ceppty</a><nav><a href="../privacy/">Privacy</a><a href="../support/">Support</a><a href="../en/privacy/" hreflang="en">English</a></nav></header>
-<h1>Privacyverklaring</h1>
-<p class="muted">Laatst bijgewerkt: 27 september 2026</p>
-<div class="card"><strong>Kort gezegd:</strong> Ceppty bewaart je kassabonnen op je telefoon. Geen account, geen reclame, geen tracking. Er gaat alleen iets naar buiten als jij dat kiest: een melding over een kassabon die de app niet goed leest, of iets wat je zelf deelt.</div>
+<!-- Текст политики — юридический: правится только вместе с docs/store-privacy.md (INF-06). -->
+<template>
+<div class="legal">
 <h2>Wie zijn wij</h2>
 <p>Ceppty wordt gemaakt door ZixyAero (KvK 97721379, Nederland). Vragen over privacy: <a href="mailto:support@ceppty.nl">support@ceppty.nl</a>.</p>
 <h2>Welke gegevens de app gebruikt</h2>
@@ -36,9 +25,9 @@
 <p>Je kunt kassabonnen in de app verwijderen. Als je de app verwijdert, worden alle gegevens van de app van je telefoon gewist. Wij hebben geen kopie.</p>
 <h2>Kinderen</h2>
 <p>De app is niet bedoeld voor kinderen en vraagt niemand om persoonlijke gegevens.</p>
+<h2>Deze website</h2>
+<p>ceppty.nl gebruikt geen cookies en geen analytics, en laadt niets van andere websites — ook de lettertypes staan op onze eigen server. We bewaren je IP-adres niet.</p>
 <h2>Wijzigingen</h2>
 <p>Verandert er iets aan deze verklaring, dan passen we deze pagina aan en de datum hierboven.</p>
-<footer>© 2026 ZixyAero (KvK 97721379) · Ceppty is geen app van Albert Heijn en is niet met Albert Heijn verbonden.</footer>
-</main>
-</body>
-</html>
+</div>
+</template>

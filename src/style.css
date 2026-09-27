@@ -1,0 +1,188 @@
+:root {
+  --violet: #6f35b5;
+  --violet-deep: #4b1f85;
+  --violet-soft: #f1e8fb;
+  --yellow: #ffcf4a;
+  --mint: #7fe0c2;
+  --pink: #ff8fb1;
+  --ink: #1d1330;
+  --ink-soft: #4a3f5c;
+  --muted: #6b6078;
+  --ground: #fbf7f2;
+  --card: #ffffff;
+  --line: #ede6f4;
+  --night: #2c2140;
+  --night-text: #d9cfe6;
+  --display: 'Nunito', system-ui, sans-serif;
+  --body: 'Nunito Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --radius-l: 36px;
+  --radius-m: 24px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-padding-top: 24px; }
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font: 17px/1.6 var(--body);
+  -webkit-font-smoothing: antialiased;
+}
+#app { min-height: 100vh; display: flex; flex-direction: column; }
+main { flex: 1; }
+a { color: var(--violet); }
+a:hover { color: var(--violet-deep); }
+:focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; border-radius: 8px; }
+h1, h2, h3 { font-family: var(--display); font-weight: 900; margin: 0; text-wrap: balance; }
+p { margin: 0; }
+
+.wrap { width: 100%; max-width: 1200px; margin: 0 auto; padding-inline: 24px; }
+.section { padding-block: 96px; display: flex; flex-direction: column; gap: 40px; }
+.section-title { font-size: clamp(36px, 5vw, 56px); letter-spacing: -1px; }
+
+/* Шапка */
+.site-header { background: var(--violet); color: #fff; }
+.header-row { height: 84px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.brand { display: flex; align-items: center; gap: 12px; color: #fff; text-decoration: none; font: 900 28px var(--display); }
+.brand:hover { color: #fff; }
+.logo { position: relative; width: 44px; height: 44px; border-radius: 14px; background: #fff; display: inline-flex; align-items: center; justify-content: center; flex: none; }
+.logo-c { font: 900 30px/1 var(--display); color: var(--violet); margin-top: -4px; margin-left: -6px; }
+.logo-bar { position: absolute; right: 8px; top: 16px; width: 6px; height: 13px; border-radius: 3px; background: var(--yellow); }
+.site-header nav { display: flex; align-items: center; gap: 28px; font-weight: 700; }
+.nav-link { color: #fff; text-decoration: none; padding-block: 4px; border-bottom: 3px solid transparent; }
+.nav-link:hover { color: #fff; border-bottom-color: rgba(255, 255, 255, .5); }
+.nav-link.active { border-bottom-color: var(--yellow); }
+.lang-pill { color: #fff; text-decoration: none; border: 2px solid rgba(255, 255, 255, .6); border-radius: 999px; padding: 6px 14px; }
+.lang-pill:hover { color: var(--violet); background: #fff; }
+
+/* Первый экран */
+.hero, .page-hero { position: relative; overflow: hidden; background: var(--violet); color: #fff; }
+.hero { padding-block: 56px 0; }
+.blob { position: absolute; border-radius: 50%; pointer-events: none; }
+.blob-yellow { width: 620px; height: 620px; right: -140px; top: 40px; background: var(--yellow); }
+.blob-pink { width: 320px; height: 320px; left: 38%; bottom: -170px; background: var(--pink); opacity: .9; }
+.blob-small { width: 280px; height: 280px; right: 6%; top: -80px; left: auto; bottom: auto; }
+.hero-row { position: relative; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 40px; align-items: end; }
+.hero-text { display: flex; flex-direction: column; gap: 28px; padding-block: 40px 96px; }
+.hero h1 { font-size: clamp(44px, 7vw, 84px); line-height: .98; letter-spacing: -1.5px; }
+.hero-lead { font-size: clamp(18px, 2vw, 22px); line-height: 1.5; color: var(--violet-soft); max-width: 36em; }
+.ticks { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 20px; font-weight: 700; }
+.ticks li { display: flex; align-items: center; gap: 6px; }
+.ticks svg { color: var(--yellow); }
+
+/* Места под значки магазинов */
+.badges { display: flex; flex-wrap: wrap; gap: 14px; }
+.badge-slot { width: 200px; height: 64px; border-radius: 14px; border: 2px dashed rgba(255, 255, 255, .75); background: rgba(255, 255, 255, .12); display: flex; align-items: center; justify-content: center; }
+.badge-label { font-size: 13px; font-weight: 700; letter-spacing: .04em; color: #fff; opacity: .9; }
+
+/* Телефон */
+.phone { justify-self: center; width: 330px; max-width: 100%; aspect-ratio: 1 / 2; border-radius: 48px; background: var(--ink); padding: 14px; transform: rotate(4deg) translateY(40px); box-shadow: 0 30px 60px rgba(29, 19, 48, .35); }
+.phone-screen { height: 100%; border-radius: 36px; background: var(--ground); color: var(--ink); padding: 28px 20px; display: flex; flex-direction: column; gap: 12px; }
+.phone-month { font: 900 22px var(--display); }
+.phone-total { font: 900 40px var(--display); color: var(--violet); }
+.phone-label { font-size: 12px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+.phone-row { display: flex; align-items: center; gap: 12px; background: var(--card); border-radius: 16px; padding: 12px; }
+.phone-dot { width: 36px; height: 36px; border-radius: 12px; flex: none; }
+.phone-name { flex: 1; display: flex; flex-direction: column; line-height: 1.3; font-size: 15px; }
+.phone-name small { font-size: 12px; color: var(--muted); }
+.phone-price { font-weight: 800; }
+.phone-button { margin-top: auto; height: 56px; border-radius: 999px; background: var(--violet); color: #fff; display: flex; align-items: center; justify-content: center; gap: 10px; font-weight: 800; }
+
+/* Шаги */
+.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.step { border-radius: var(--radius-l); padding: 40px; display: flex; flex-direction: column; gap: 14px; min-height: 300px; transition: transform .25s ease; }
+.step:hover { transform: translateY(-6px) rotate(-.5deg); }
+.step h3 { font-size: 30px; line-height: 1.1; }
+.step p { font-size: 18px; }
+.step-num { width: 60px; height: 60px; border-radius: 50%; background: var(--ink); color: #fff; display: flex; align-items: center; justify-content: center; font: 900 28px var(--display); }
+.yellow { background: var(--yellow); }
+.mint { background: var(--mint); }
+.pink { background: var(--pink); }
+
+/* Приватность на главной */
+.privacy-band { margin-top: 0; border-radius: 48px; background: var(--ink); color: #fff; padding: clamp(32px, 6vw, 80px); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 56px; align-items: center; }
+.privacy-text { display: flex; flex-direction: column; gap: 20px; }
+.privacy-text h2 { font-size: clamp(36px, 5vw, 56px); line-height: 1.02; letter-spacing: -1px; }
+.privacy-text p { font-size: 19px; color: var(--night-text); }
+.more-link { color: var(--yellow); font-weight: 700; text-decoration: none; }
+.more-link:hover { color: #fff; }
+.privacy-points { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.privacy-points li { background: var(--night); border-radius: var(--radius-m); padding: 24px; display: flex; flex-direction: column; gap: 6px; color: var(--night-text); font-size: 16px; }
+.privacy-points strong { font: 900 22px var(--display); }
+.text-yellow { color: var(--yellow); }
+.text-mint { color: var(--mint); }
+.text-pink { color: var(--pink); }
+.text-white { color: #fff; }
+
+/* Albert Heijn */
+.ah { padding-block: 88px; display: flex; align-items: center; gap: 24px; }
+.ah-icon { width: 72px; height: 72px; flex: none; border-radius: 22px; border: 3px solid var(--ink); background: var(--card); display: flex; align-items: center; justify-content: center; }
+.ah h3 { font-size: 28px; }
+.ah p { color: var(--ink-soft); font-size: 18px; }
+
+/* Подвал */
+.site-footer { background: var(--violet); color: #fff; padding-block: 56px; }
+.footer-row { display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; flex-wrap: wrap; }
+.footer-brand { display: flex; flex-direction: column; gap: 8px; color: var(--violet-soft); font-size: 15px; }
+.footer-name { font: 900 32px var(--display); color: #fff; }
+.footer-note { font-size: 13px; opacity: .85; max-width: 44em; }
+.site-footer a { color: #fff; }
+.footer-nav { display: flex; gap: 24px; font-weight: 700; }
+
+/* Внутренние страницы */
+.page-hero { padding-block: 64px 80px; }
+.page-hero-text { position: relative; display: flex; flex-direction: column; gap: 16px; }
+.page-hero h1 { font-size: clamp(40px, 6vw, 68px); line-height: 1; letter-spacing: -1px; max-width: 14em; }
+.eyebrow { font-size: 14px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--violet-soft); }
+.eyebrow.dark { color: var(--ink); }
+.support-row { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 420px); gap: 48px; align-items: center; }
+.mail-card { background: var(--yellow); color: var(--ink); border-radius: 32px; padding: 32px; display: flex; flex-direction: column; gap: 10px; }
+.mail-link { font: 900 clamp(24px, 3vw, 30px) var(--display); color: var(--ink); text-decoration: none; overflow-wrap: anywhere; }
+.mail-link:hover { color: var(--violet-deep); text-decoration: underline; }
+
+.faq { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; align-items: start; }
+.faq-item { background: var(--card); border-radius: var(--radius-m); padding: 24px 28px; }
+.faq-item summary { font: 900 22px/1.25 var(--display); cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; color: var(--violet); flex: none; }
+.faq-item[open] summary::after { content: '−'; }
+.faq-item p { margin-top: 12px; color: var(--ink-soft); }
+
+.legal-wrap { padding-block: 72px 96px; }
+.legal { max-width: 760px; font-size: 18px; line-height: 1.7; }
+.legal h2 { font-size: 32px; margin: 48px 0 12px; }
+.legal h2:first-child { margin-top: 0; }
+.legal p, .legal ul { margin: 0 0 16px; }
+.legal ul { padding-left: 22px; }
+.legal li { margin-bottom: 8px; }
+
+@media (max-width: 900px) {
+  .hero-row, .support-row, .privacy-band { grid-template-columns: minmax(0, 1fr); }
+  .hero-text { padding-block: 16px 24px; }
+  .phone { width: 280px; border-radius: 40px; padding: 11px; transform: rotate(3deg) translateY(30px); }
+  .phone-screen { border-radius: 30px; padding: 22px 14px; gap: 10px; }
+  .phone-total { font-size: 32px; }
+  .phone-row { padding: 10px; gap: 10px; }
+  .phone-dot { width: 28px; height: 28px; border-radius: 10px; }
+  .phone-name { font-size: 13px; }
+  .phone-price { font-size: 13px; white-space: nowrap; }
+  .phone-button { height: 48px; font-size: 14px; }
+  .steps, .faq { grid-template-columns: minmax(0, 1fr); }
+  .step { min-height: 0; padding: 28px; }
+  .blob-yellow { width: 420px; height: 420px; right: -180px; top: auto; bottom: 40px; }
+}
+@media (max-width: 560px) {
+  .wrap { padding-inline: 16px; }
+  .header-row { height: 68px; }
+  .brand { font-size: 24px; }
+  .site-header nav { gap: 14px; font-size: 15px; }
+  .hide-sm { display: none; }
+  .badges { flex-wrap: nowrap; }
+  .badge-slot { flex: 1; min-width: 0; height: 56px; }
+  .privacy-points { grid-template-columns: minmax(0, 1fr); }
+  .ah { align-items: flex-start; padding-block: 56px; }
+  .footer-nav { flex-wrap: wrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; scroll-behavior: auto !important; }
+}

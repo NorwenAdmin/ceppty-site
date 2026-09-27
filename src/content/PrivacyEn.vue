@@ -1,17 +1,6 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy policy — Ceppty</title>
-<link rel="stylesheet" href="../../style.css">
-</head>
-<body>
-<main>
-<header><a class="brand" href="../../en/">Ceppty</a><nav><a href="../../en/privacy/">Privacy</a><a href="../../en/support/">Support</a><a href="../../privacy/" hreflang="nl">Nederlands</a></nav></header>
-<h1>Privacy policy</h1>
-<p class="muted">Last updated: 27 September 2026</p>
-<div class="card"><strong>In short:</strong> Ceppty keeps your receipts on your phone. No account, no ads, no tracking. Data only leaves your phone when you choose to send it: a report about a receipt the app can't read, or something you share yourself.</div>
+<!-- Текст политики — юридический: правится только вместе с docs/store-privacy.md (INF-06). -->
+<template>
+<div class="legal">
 <h2>Who we are</h2>
 <p>Ceppty is made by ZixyAero (KvK 97721379, the Netherlands). Privacy questions: <a href="mailto:support@ceppty.nl">support@ceppty.nl</a>.</p>
 <h2>What data the app uses</h2>
@@ -36,9 +25,9 @@
 <p>You can delete receipts in the app. Uninstalling the app erases all of its data from your phone. We don't have a copy.</p>
 <h2>Children</h2>
 <p>The app is not meant for children and asks nobody for personal details.</p>
+<h2>This website</h2>
+<p>ceppty.nl uses no cookies and no analytics, and loads nothing from other websites — even the fonts are on our own server. We don't keep your IP address.</p>
 <h2>Changes</h2>
 <p>If anything in this policy changes, we'll update this page and the date above.</p>
-<footer>© 2026 ZixyAero (KvK 97721379) · Ceppty is not an Albert Heijn app and is not affiliated with Albert Heijn.</footer>
-</main>
-</body>
-</html>
+</div>
+</template>
