@@ -34,7 +34,7 @@ GitHub Actions не используются. Раз в 5 минут тайме�
 ```bash
 curl -fsSL https://raw.githubusercontent.com/NorwenAdmin/ceppty-site/main/deploy/update-site.sh -o /srv/ceppty/update-site.sh
 chmod 755 /srv/ceppty/update-site.sh
-mkdir -p /srv/ceppty/site /srv/ceppty/site-src && chown ceppty:ceppty /srv/ceppty/site /srv/ceppty/site-src
+mkdir -p /srv/ceppty/site /srv/ceppty/site-src /srv/ceppty/.home && chown ceppty:ceppty /srv/ceppty/site /srv/ceppty/site-src /srv/ceppty/.home
 curl -fsSL https://raw.githubusercontent.com/NorwenAdmin/ceppty-site/main/deploy/ceppty-site.service -o /etc/systemd/system/ceppty-site.service
 curl -fsSL https://raw.githubusercontent.com/NorwenAdmin/ceppty-site/main/deploy/ceppty-site.timer -o /etc/systemd/system/ceppty-site.timer
 systemctl daemon-reload && systemctl enable --now ceppty-site.timer

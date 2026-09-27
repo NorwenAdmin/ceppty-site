@@ -6,4 +6,6 @@ After=network-online.target
 [Service]
 Type=oneshot
 User=ceppty
+# У системного пользователя может не быть домашней папки — кэш npm и git здесь.
+Environment=HOME=/srv/ceppty/.home
 ExecStart=/srv/ceppty/update-site.sh
