@@ -47,7 +47,7 @@ export const texts = {
       title: 'Privacyverklaring — Ceppty',
       description: 'Ceppty bewaart je kassabonnen op je telefoon. Geen account, geen reclame, geen tracking.',
       eyebrow: 'Privacyverklaring',
-      updated: 'Laatst bijgewerkt: 27 september 2026',
+      updated: 'Laatst bijgewerkt: 28 september 2026',
       h1: 'Je kassabonnen blijven op je telefoon',
       short:
         'Ceppty bewaart je kassabonnen op je telefoon. Geen account, geen reclame, geen tracking. Er gaat alleen iets naar buiten als jij dat kiest: een rapport over een kassabon die de app niet goed leest, of iets wat je zelf deelt.',
@@ -118,7 +118,7 @@ export const texts = {
       title: 'Privacy policy — Ceppty',
       description: 'Ceppty keeps your receipts on your phone. No account, no ads, no tracking.',
       eyebrow: 'Privacy policy',
-      updated: 'Last updated: 27 September 2026',
+      updated: 'Last updated: 28 September 2026',
       h1: 'Your receipts stay on your phone',
       short:
         'Ceppty keeps your receipts on your phone. No account, no ads, no tracking. Data only leaves your phone when you choose to send it: a report about a receipt the app can’t read, or something you share yourself.',
