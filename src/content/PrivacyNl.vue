@@ -12,7 +12,7 @@
 <h2>Wat we niet doen</h2>
 <ul>
 <li>Geen account of inloggen.</li>
-<li>Niets wordt op de achtergrond verstuurd — de app maakt alleen verbinding met internet als je op „Rapport versturen” tikt.</li>
+<li>Niets over jou wordt op de achtergrond verstuurd. Als je de app opent, kijkt hij hooguit twee keer per dag op onze server in de EU of er nieuwe regels voor het lezen van kassabonnen en nieuwe categorielijsten zijn: een gewone download van een bestand, zonder gegevens over jou, je kassabonnen of je telefoon, en we bewaren je IP-adres niet. Jouw gegevens verlaten je telefoon alleen als je op „Rapport versturen” tikt.</li>
 <li>Geen analytics, geen crashrapportage, geen reclame, geen tracking.</li>
 <li>Geen verkoop of doorgifte van gegevens aan derden.</li>
 </ul>

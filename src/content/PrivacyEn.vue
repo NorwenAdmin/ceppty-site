@@ -12,7 +12,7 @@
 <h2>What we don't do</h2>
 <ul>
 <li>No account or sign-in.</li>
-<li>Nothing is sent in the background — the app only connects to the internet when you tap “Send report”.</li>
+<li>Nothing about you is sent in the background. When you open the app, it checks our server in the EU for updated receipt-reading rules and category lists, at most twice a day: a plain file download that contains no data about you, your receipts or your phone, and we don't keep your IP address. Your data only leaves the phone when you tap “Send report”.</li>
 <li>No analytics, no crash reporting, no ads, no tracking.</li>
 <li>No selling or passing data to third parties.</li>
 </ul>
